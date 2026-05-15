@@ -15,7 +15,7 @@ In industrial settings, machine failures are highly imbalanced events (healthy o
 
 ## Repository Structure
 
-\`\`\`text
+```text
 ├── data/                   # Generated datasets (ignored in git)
 ├── models/                 # Saved trained models (.pkl files)
 ├── results/                # Output evaluation metrics and reports
@@ -29,26 +29,26 @@ In industrial settings, machine failures are highly imbalanced events (healthy o
 ├── main.py                 # Main execution script to run the pipeline
 ├── requirements.txt        # Python package dependencies
 └── README.md               # Project documentation
-\`\`\`
+```
 
 ## How to Run the Project
 
 **1. Clone the repository**
-\`\`\`bash
+```bash
 git clone https://github.com/YOUR_USERNAME/predictive-maintenance-ds211.git
 cd predictive-maintenance-ds211
-\`\`\`
+```
 
 **2. Install dependencies**
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 **3. Run the full pipeline**
 The main script will automatically generate data, preprocess it, train the models, evaluate them, and run a sample prediction.
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 ## Evaluation & Results
 Evaluation reports, including precision-recall trade-offs and confusion matrices, are automatically generated and saved to the `/results` directory after running the pipeline. The system evaluates models to ensure it leans toward high recall (catching failures) while maintaining a respectable precision.
